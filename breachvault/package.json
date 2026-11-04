@@ -1,0 +1,21 @@
+{
+  "name": "breachvault",
+  "version": "1.0.0",
+  "description": "BreachVault - Dark Web Data Breach & Leaked Credential Intelligence System",
+  "scripts": {
+    "dev": "next dev -p 3000",
+    "build": "next build",
+    "start": "next start -p 3000"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "dotenv": "^16.4.7",
+    "lucide-react": "^1.66.0",
+    "mysql2": "^3.12.0",
+    "next": "^15.1.0",
+    "pg": "^8.13.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tailwind-merge": "^3.7.0"
+  }
+}
