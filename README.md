@@ -5,7 +5,7 @@
 > **Team:**  
 > - **A S Vincent** (`PES2UG24CS002`)  
 > - **Akshat Kumar** (`PES2UG24CS046`)  
-> **Faculty Guide:** _________________________  
+> **Faculty Guide:** Prof. Deena Hajim  
 
 ---
 
@@ -212,5 +212,5 @@ SELECT fn_calculate_org_risk_score(1) AS calculated_score;
 | **A S Vincent** (`PES2UG24CS002`) | **Lead Transactional DB & Vector Architecture** | • Core 3NF ER Schema (`breaches`, `threat_actors`, `audit_logs`)<br>• Stored Procedure `sp_ingest_breach` (Atomic transaction rollback handling)<br>• `pgvector` 384-dim semantic similarity search & IVFFlat index (`<=>`)<br>• Security audit trigger `trg_audit_breach_insert`<br>• Server-side database connection pooling & REST APIs |
 | **Akshat Kumar** (`PES2UG24CS046`) | **Lead Analytical DB & Stored Functions** | • Enterprise & Credential Schemas (`organizations`, `domains`, `credentials`)<br>• Stored Function `fn_check_credential_exposure` (SHA-256 hash lookup)<br>• Stored Function `fn_calculate_org_risk_score` (Multi-factor risk model)<br>• Analytical Views (`v_high_risk_organizations`, `v_threat_actor_profiles`)<br>• Real-time alert triggers (`trg_watchlist_alert`) & B-Tree index optimization |
 
-- **Faculty Guide:** _________________________
+- **Faculty Guide:** Prof. Deena Hajim
 

@@ -378,8 +378,8 @@ def generate_pdf():
             </div>
             <div class="cover-item">
                 <h4>Faculty Guide</h4>
-                <p>_________________________</p>
-                <p style="font-size: 8.5pt; color: #94a3b8; font-weight: normal; margin-top: 2px;">Dept. of CSE, PES University</p>
+                <p>Prof. Deena Hajim</p>
+                <p style="font-size: 8.5pt; color: #94a3b8; font-weight: normal; margin-top: 2px;">Assistant Professor &bull; Dept. of CSE, PES University</p>
             </div>
             <div class="cover-item">
                 <h4>Team Member 1 (Lead Transactional DB & Vector Architecture)</h4>

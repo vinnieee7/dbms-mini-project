@@ -5,7 +5,7 @@
 **Department:** Department of Computer Science and Engineering, Faculty of Engineering  
 **Institution:** PES University, Electronic City Campus, Bengaluru – 560 100  
 **Academic Period:** AUG – DEC 2026  
-**Faculty Guide:** _________________________  
+**Faculty Guide:** Prof. Deena Hajim  
 
 ---
 

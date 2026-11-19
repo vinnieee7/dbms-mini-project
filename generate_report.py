@@ -179,7 +179,8 @@ def build_report():
     p_guide.paragraph_format.space_after = Pt(36)
     run_guide = p_guide.add_run(
         "Under the Guidance of\n"
-        "_________________________\n"
+        "Prof. Deena Hajim\n"
+        "Assistant Professor\n"
         "Department of Computer Science and Engineering\n\n"
         "AUG - DEC 2026\n"
         "DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING\n"
@@ -218,7 +219,12 @@ def build_report():
     
     p_sig = doc.add_paragraph()
     p_sig.paragraph_format.space_before = Pt(40)
-    p_sig.add_run("Signature of Guide: _________________________\n\nDept. of CSE, PES University")
+    p_sig.add_run(
+        "Signature of Guide: _________________________\n"
+        "Prof. Deena Hajim\n"
+        "Assistant Professor, Dept. of CSE\n"
+        "PES University"
+    )
 
     doc.add_page_break()
 
@@ -226,19 +232,23 @@ def build_report():
     # DECLARATION & ACKNOWLEDGEMENT
     # -------------------------------------------------------------
     add_styled_heading(doc, "DECLARATION", 1).alignment = WD_ALIGN_PARAGRAPH.CENTER
-    add_body_p(doc, "We hereby declare that the DBMS Project entitled 'BreachVault — A Dark Web Data Breach & Leaked Credential Intelligence System' has been carried out by us under guidance and submitted in partial fulfilment of the course requirements for the award of degree of Bachelor of Technology in Computer Science and Engineering of PES University, Bengaluru during the academic semester AUG – DEC 2026. We confirm that this work is original and has not been submitted elsewhere for any academic degree or evaluation.")
+    add_body_p(doc, "We hereby declare that the DBMS Project entitled 'BreachVault — A Dark Web Data Breach & Leaked Credential Intelligence System' has been carried out by us under the guidance of Prof. Deena Hajim, Assistant Professor, Department of Computer Science and Engineering, and submitted in partial fulfilment of the course requirements for the award of degree of Bachelor of Technology in Computer Science and Engineering of PES University, Bengaluru during the academic semester AUG – DEC 2026. We confirm that this work is original and has not been submitted elsewhere for any academic degree or evaluation.")
 
     t_dec = doc.add_table(rows=2, cols=3)
     t_dec.alignment = WD_TABLE_ALIGNMENT.CENTER
     t_dec.cell(0, 0).paragraphs[0].add_run("A S Vincent")
     t_dec.cell(0, 1).paragraphs[0].add_run("PES2UG24CS002")
-    t_dec.cell(0, 2).paragraphs[0].add_run("Signature: ____________")
+    sig1_run = t_dec.cell(0, 2).paragraphs[0].add_run("Signature: A S Vincent")
+    sig1_run.italic = True
+    sig1_run.bold = True
     t_dec.cell(1, 0).paragraphs[0].add_run("Akshat Kumar")
     t_dec.cell(1, 1).paragraphs[0].add_run("PES2UG24CS046")
-    t_dec.cell(1, 2).paragraphs[0].add_run("Signature: ____________")
+    sig2_run = t_dec.cell(1, 2).paragraphs[0].add_run("Signature: Akshat Kumar")
+    sig2_run.italic = True
+    sig2_run.bold = True
 
     add_styled_heading(doc, "ACKNOWLEDGEMENT", 1).alignment = WD_ALIGN_PARAGRAPH.CENTER
-    add_body_p(doc, "We express our sincere gratitude to our faculty guide and the Department of Computer Science and Engineering, PES University, for their invaluable guidance, encouragement, and insightful feedback throughout the conception and implementation of this DBMS project.")
+    add_body_p(doc, "We express our sincere gratitude to Prof. Deena Hajim, Department of Computer Science and Engineering, PES University, for her invaluable guidance, encouragement, and insightful feedback throughout the conception and implementation of this DBMS project.")
     add_body_p(doc, "We take this opportunity to thank Dr. Sandesh B J, Professor and Chairperson, Department of Computer Science and Engineering, PES University, for fostering an exceptional learning and research environment. We are deeply grateful to Prof. Jawahar Doreswamy, Chancellor, and Dr. J. Suryaprasad, Vice-Chancellor, PES University, for providing academic resources and state-of-the-art infrastructure. Finally, we thank our peers and families for their unwavering encouragement.")
 
     doc.add_page_break()
